@@ -1,7 +1,7 @@
 linters:
-  enable:
-    - gofmt
-    - typecheck
-  disable-all: true
+    enable:
+        - gofmt
+        - typecheck
+    disable-all: true
 issues:
-  fix: true
+    fix: true
