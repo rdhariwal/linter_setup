@@ -8,21 +8,33 @@ import (
 
 func main() {
 
-	// badly formatted code #gofmt
-
-	// declare variable here
+	// #gofmt begin
 	var a = 1
 		// declare another variable here
 			var b = 16
 			//calculate the sum
 		sum := a + b
-		color.Red("Hello red planet")
+			fmt.Println(sum)
+			color.Red("Hello red planet")
 		fmt.Println("----------------------------------------------")
-	// end badly formatted code
+	//#gofmt end
+	// #gofmt begin
+	var a = 1
+		// declare another variable here
+			var b = 16
+			//calculate the sum
+		sum := a + b
+			fmt.Println(sum)
+			color.Red("Hello red planet")
+		fmt.Println("----------------------------------------------")
+	//#gofmt end
+	//#typecheck begin
+	// eval1 declared but not used
+	eval1, _ := strconv.ParseBool("false")
 
-	// variables decalared but not used add noise
-	res1, _ := strconv.ParseBool("this will fail")
-	res2, err := strconv.ParseBool("this will fail")
-	res3, _ := 			strconv.ParseBool("this will fail")
-	res4, _ = strconv.ParseBool("this will fail")
+	// err declared but not used
+	eval2, err := strconv.ParseBool("true")
+	fmt.Println(eval2)
+	//#typecheck end
+
 }
