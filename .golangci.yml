@@ -1,7 +1,6 @@
 linters:
     enable:
         - gofmt
-        - typecheck
-    disable-all: true
-issues:
-    fix: true
+        - gosec
+#issues:
+#    fix: true
